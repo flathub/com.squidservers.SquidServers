@@ -56,7 +56,6 @@
   </provides>
 
   <releases>
-    <release version="0.10.2" date="2026-10-25"/>
     <release version="0.10.1" date="2026-10-20">
       <description>
         <p>Resource Pack Hosting, Custom Backup Schedules &amp; Diagnostics Update</p>
