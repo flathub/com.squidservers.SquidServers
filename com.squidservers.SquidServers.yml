@@ -43,12 +43,16 @@ modules:
       - unappimage squidservers.AppImage
       - mv squashfs-root /app/squidservers
       - install -Dm755 squidservers.sh /app/bin/squidservers
-      # Desktop entry, icon and AppStream metainfo all ship inside the upstream AppImage
+      # Desktop entry, icon and AppStream metainfo
       - install -Dm644 /app/squidservers/squidservers.desktop -t /app/share/applications/
       - desktop-file-edit --set-key=Exec --set-value='squidservers %U' /app/share/applications/squidservers.desktop
-      - install -Dm644 /app/squidservers/usr/share/icons/hicolor/512x512/apps/squidservers.png -t /app/share/icons/hicolor/512x512/apps/
-      - install -Dm644 /app/squidservers/usr/share/metainfo/com.squidservers.SquidServers.metainfo.xml -t /app/share/metainfo/
+      - install -Dm644 com.squidservers.SquidServers.png /app/share/icons/hicolor/512x512/apps/squidservers.png
+      - install -Dm644 com.squidservers.SquidServers.metainfo.xml /app/share/metainfo/com.squidservers.SquidServers.metainfo.xml
     sources:
+      - type: file
+        path: com.squidservers.SquidServers.png
+      - type: file
+        path: com.squidservers.SquidServers.metainfo.xml
       - type: file
         dest-filename: squidservers.AppImage
         only-arches: [x86_64]

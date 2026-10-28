@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>com.squidservers.SquidServers</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>LicenseRef-proprietary</project_license>
+  <name>SquidServers</name>
+  <summary>Local Minecraft server hosting</summary>
+
+  <branding>
+    <color type="primary" scheme_preference="light">#2366c9</color>
+    <color type="primary" scheme_preference="dark">#00459b</color>
+  </branding>
+
+  <description>
+    <p>
+      SquidServers makes creating, managing, and hosting local Minecraft servers effortless.
+      Easily configure Vanilla, Paper, Fabric, Forge, and NeoForge servers with automated setup,
+      performance metrics, and seamless world imports.
+    </p>
+    <p>Features include:</p>
+    <ul>
+      <li>One-click server creation with automatic Java runtime resolution</li>
+      <li>Real-time server performance metrics and RAM allocation controls</li>
+      <li>Automated player invite links and built-in network tunneling</li>
+      <li>Complete world backups, imports, and modpack management</li>
+    </ul>
+  </description>
+
+  <launchable type="desktop-id">com.squidservers.SquidServers.desktop</launchable>
+
+  <developer id="com.squidservers">
+    <name>SquidServers Team</name>
+  </developer>
+
+  <url type="homepage">https://squidservers.com/</url>
+  <url type="bugtracker">https://support.squidservers.com</url>
+  <url type="help">https://support.squidservers.com</url>
+
+  <screenshots>
+    <screenshot type="default">
+      <caption>SquidServers server dashboard and performance monitoring</caption>
+      <image>https://cdn.squidservers.com/flathub/screenshots/server-dashboard.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>Minecraft server configuration and setup wizard</caption>
+      <image>https://cdn.squidservers.com/flathub/screenshots/setup-wizard.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>Server overview with quick actions and connection address</caption>
+      <image>https://cdn.squidservers.com/flathub/screenshots/server-overview.png</image>
+    </screenshot>
+  </screenshots>
+
+  <provides>
+    <binary>squidservers</binary>
+  </provides>
+
+  <releases>
+    <release version="0.10.2" date="2026-10-25"/>
+    <release version="0.10.1" date="2026-10-20">
+      <description>
+        <p>Resource Pack Hosting, Custom Backup Schedules &amp; Diagnostics Update</p>
+        <ul>
+          <li>Resource Pack Hosting: Added resource pack hosting, validation, and management in server gameplay settings for Java Edition servers.</li>
+          <li>Custom Backup Schedules: Added support for custom backup intervals alongside preset tiers.</li>
+          <li>Manual Update Check: Added a manual update check button in Settings with update commands for package manager installations (.deb, Snap, Flatpak, Homebrew).</li>
+          <li>Diagnostics &amp; Error Tracking: Added short correlation IDs to failures and a local error history buffer for troubleshooting.</li>
+          <li>About Links: Added official website and donation links to the About section.</li>
+          <li>Memory Leak: Resolved memory leak caused by unclosed log stream loops.</li>
+          <li>Console Performance: Batched log updates and bounded buffers to maintain responsiveness during high log volume.</li>
+          <li>Analytics Reliability: Bounded telemetry queues and shortened network timeouts to avoid blocking actions.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.10.0" date="2026-10-15">
+      <description>
+        <p>Server Controls &amp; Diagnostics Update</p>
+        <ul>
+          <li>Server Logs Tab: Added a dedicated Logs tab in the server dashboard with a log and crash report explorer.</li>
+          <li>Log Analysis Engine: Analyzes server logs to detect mod/plugin conflicts, missing dependencies, EULA issues, and port conflicts.</li>
+          <li>Log Sharing &amp; Diagnostics: Added one-click server log sharing and an app diagnostics uploader.</li>
+          <li>MOTD Editor: Added an in-app MOTD editor.</li>
+          <li>Keyboard Shortcuts: Added keyboard shortcuts for navigation, server actions, and settings.</li>
+          <li>Smart Mod Disabling: Toggle mods on or off without deleting files, and upload mod JARs directly.</li>
+          <li>Scheduler Triggers: Added On Start and On Stop task triggers.</li>
+          <li>Linux Flatpak &amp; ARM64 Support: Added Flatpak packaging, Linux ARM64 binaries (Playit and PortableMC), automated APT repository releases, and versioned SHA-256 permalinks.</li>
+          <li>Unsaved Changes Prompt: Added a warning dialog before leaving settings with unsaved changes.</li>
+          <li>server.properties Highlighting: Added syntax highlighting to the server properties dialog.</li>
+          <li>Playit Account Linking: Added Playit account link and unlink options in app settings profile tab.</li>
+          <li>World Gamemode Settings: Added gamemode dropdown and force-gamemode toggle to world creation and server settings.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.9.11" date="2026-10-04"/>
+  </releases>
+
+  <supports>
+    <control>pointing</control>
+    <control>keyboard</control>
+    <control>touch</control>
+  </supports>
+
+  <requires>
+    <display_length compare="ge">768</display_length>
+  </requires>
+
+  <content_rating type="oars-1.1">
+    <content_attribute id="social-chat">intense</content_attribute>
+    <content_attribute id="social-audio">intense</content_attribute>
+    <content_attribute id="social-contacts">intense</content_attribute>
+    <content_attribute id="social-info">none</content_attribute>
+    <content_attribute id="money-purchasing">intense</content_attribute>
+  </content_rating>
+</component>
+
