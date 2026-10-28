@@ -46,7 +46,7 @@ modules:
       # Desktop entry, icon and AppStream metainfo
       - install -Dm644 /app/squidservers/squidservers.desktop -t /app/share/applications/
       - desktop-file-edit --set-key=Exec --set-value='squidservers %U' /app/share/applications/squidservers.desktop
-      - install -Dm644 com.squidservers.SquidServers.png /app/share/icons/hicolor/512x512/apps/com.squidservers.SquidServers.png
+      - install -Dm644 com.squidservers.SquidServers.png /app/share/icons/hicolor/512x512/apps/squidservers.png
       - install -Dm644 com.squidservers.SquidServers.metainfo.xml /app/share/metainfo/com.squidservers.SquidServers.metainfo.xml
     sources:
       - type: file
