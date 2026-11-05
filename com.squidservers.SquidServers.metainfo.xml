@@ -56,6 +56,40 @@
   </provides>
 
   <releases>
+    <release version="0.10.2" date="2026-11-04">
+      <url type="details">https://github.com/SquidServers/selfhost-app/releases/tag/v0.10.2</url>
+      <description>
+        <p>Tunnels, Diagnostics &amp; Playit Integration</p>
+        <ul>
+          <li>Simple Voice Chat Tunnels: Added Simple Voice Chat UDP tunnel support with automatic voicechat server property and local port synchronization.</li>
+          <li>Additional Tunnel Types: Added support for NetherNet, Raw TCP, and Raw TCP+UDP tunnels with updated Bedrock and Geyser networking.</li>
+          <li>Bedrock Default Transport: Set Bedrock tunnel transport to RakNet by default and restored direct UDP tunnel support.</li>
+          <li>Playit Quota &amp; Account Management: Added tunnel quota tracking, agent key invalidation recovery, and account unlinking support.</li>
+          <li>Help Dialog: Added a context-aware help dialog accessible from the sidebar or keyboard shortcuts, featuring tailored guides and real-time status details.</li>
+          <li>Service Status Monitoring: Added real-time service health tracking for SquidServers and Playit.gg with global outage alerts and incident feeds.</li>
+          <li>Datacenter Status Visualization: Added state-aware color-coding for re-routed and offline datacenters in the help dialog.</li>
+          <li>Network Diagnostic Service: Added multi-host connectivity checks, DNS sinkhole detection, and an offline status banner.</li>
+          <li>Startup Error Panel: Added structured startup error diagnostics with error codes, log copying, and direct support actions.</li>
+          <li>Installation Wizard Reports: Added diagnostic Markdown report generation for server setup progress and installation errors to the log sharing tool.</li>
+          <li>Debug Identifiers: Added copyable debug identifiers (Install ID, Analytics ID, Account ID) in About settings and upgraded bundled Playit binaries to v1.2.0.</li>
+          <li>Player Management Bulk Actions: Added multi-selection and bulk actions (OP, whitelist, kick, ban) to the players dashboard.</li>
+          <li>Player List Refresh &amp; Badge: Added manual online player list refresh via console query and an online player count badge in the sidebar navigation.</li>
+          <li>Startup Script Safeguards: Automatically handles interactive prompts in startup scripts and disables manual JVM/nogui overrides when custom scripts are active.</li>
+          <li>Server Search: Automatically displays a search bar when managing more than 8 servers.</li>
+          <li>Setup Wizard Mod &amp; Plugin Drag-and-Drop: Added custom JAR file drag-and-drop to mod and plugin selection steps.</li>
+          <li>First-Launch Onboarding &amp; Theme Selection: Added theme selection and initial setup flow to the first-launch modal.</li>
+          <li>Admin Notices &amp; Policy Updates: Added admin notice banners and policy update modals with targeted dismissals and preferences sync.</li>
+          <li>Seasonal Themes &amp; App Icons: Added Christmas seasonal theme styling, festive overlay effects, and dynamic app icon support.</li>
+          <li>Seasonal Server Icons: Automatically synchronizes seasonal branding for servers using the default icon.</li>
+          <li>Update Preferences: Added update channel preferences and an option to disable automatic updates.</li>
+          <li>Native Zip Extraction: Added native zip extraction using system tools before falling back to archive libraries for faster modpack decompression.</li>
+          <li>Download Reliability: Streamed large server downloads directly to disk with disabled timeouts to prevent corrupted or partial downloads.</li>
+          <li>PII Redaction: Improved regex patterns for IP address and Bedrock XUID masking in error logs and diagnostics.</li>
+          <li>Atomic Server Backups: Added atomic rolling backups and recovery fallback for server list storage.</li>
+          <li>Startup Script Detection: Recognized startserver as a valid launch script and ensured execute permissions on startup scripts.</li>
+        </ul>
+      </description>
+    </release>
     <release version="0.10.1" date="2026-10-20">
       <description>
         <p>Resource Pack Hosting, Custom Backup Schedules &amp; Diagnostics Update</p>
