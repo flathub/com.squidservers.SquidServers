@@ -56,16 +56,16 @@ modules:
       - type: file
         dest-filename: squidservers.AppImage
         only-arches: [x86_64]
-        url: https://cdn.squidservers.com/squidservers-0.10.2-x86_64.AppImage
-        sha256: 2a6d747c7fd512b1de288cdf7e3e313e702d72c91e88c2e81712f0bd418699b6
+        url: https://cdn.squidservers.com/squidservers-0.10.4-x86_64.AppImage
+        sha256: 4e0d976fcd51c198cb0fd698048ac3ae2111cd855a983839baee3156b24167ce
         x-checker-data:
           type: electron-updater
           url: https://cdn.squidservers.com/latest-linux.yml
       - type: file
         dest-filename: squidservers.AppImage
         only-arches: [aarch64]
-        url: https://cdn.squidservers.com/squidservers-0.10.2-arm64.AppImage
-        sha256: c3ba0023e42dcfd734135adc2e05167459be4b8a4bf2833ef5b4866d4b360608
+        url: https://cdn.squidservers.com/squidservers-0.10.4-arm64.AppImage
+        sha256: bd4429bfcff3b621088b496da1b95609323a707708f29b52cfa205a5a1334b9b
         x-checker-data:
           type: electron-updater
           url: https://cdn.squidservers.com/latest-linux-arm64.yml
