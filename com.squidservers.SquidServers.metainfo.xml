@@ -56,6 +56,9 @@
   </provides>
 
   <releases>
+    <release version="0.10.4" date="2026-11-12">
+      <description></description>
+    </release>
     <release version="0.10.2" date="2026-11-04">
       <url type="details">https://github.com/SquidServers/selfhost-app/releases/tag/v0.10.2</url>
       <description>
