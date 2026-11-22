@@ -56,8 +56,95 @@
   </provides>
 
   <releases>
+    <release version="0.11.4" date="2026-11-22">
+      <url type="details">https://github.com/SquidServers/selfhost-app/releases/tag/v0.11.4</url>
+      <description>
+        <p>SquidServers Catalog, Hangar Plugins &amp; Modpack Improvements</p>
+        <ul>
+          <li>SquidServers Catalog &amp; Hangar Plugins: Browse the first-party SquidServers catalog (with card highlights, badges, author avatars, and custom links) and Hangar plugins for PaperMC servers.</li>
+          <li>Flagged Content &amp; Memory Overrides: Added hold-to-override support on Next/confirm buttons for flagged items and RAM allocations exceeding available system memory.</li>
+          <li>Setup Wizard &amp; Modpack Summary: Unified the selected modpack summary card across all providers, added loader filter icons, and preserved bundled server-icon.png files and modpack icons.</li>
+          <li>Mod Loader &amp; Fabric API Updater: Update mod loader versions and Fabric API directly from server settings, with a backup prompt before applying changes.</li>
+          <li>System Language Detection: Detect the operating system language automatically on first launch and apply matching supported translations.</li>
+          <li>Super User Mode: Added an optional Super User mode (toggled with F9) with diagnostic views and bypass options for advanced troubleshooting.</li>
+          <li>Java Security &amp; Temurin Detection: Detect Temurin builds that already include the upstream security fix and prune redundant security flags from managed startup scripts.</li>
+          <li>Java Downloads &amp; Setup Wizard: Improve Java download resilience, error reporting, and installation fallback during server setup.</li>
+          <li>Forge &amp; NeoForge Scripts: Adopt Forge and NeoForge installer start scripts as Squid-managed so startup options apply consistently.</li>
+          <li>Server Restart &amp; Player List: Handle in-game /restart commands properly and improve player list refresh reliability.</li>
+          <li>Windows Startup Sync: Sync the open-on-startup setting with Windows Task Manager and persist toggle changes immediately.</li>
+          <li>Playit Ping Shortcut: Added a global F7 keyboard shortcut to run a Playit ping test.</li>
+          <li>Archive Extraction &amp; Localization: Replaced native archive extraction with a pure-JS implementation and fixed a missing translation namespace in the update dialog.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.11.3" date="2026-11-19">
+      <url type="details">https://github.com/SquidServers/selfhost-app/releases/tag/v0.11.3</url>
+      <description>
+        <p>Java Security Updates</p>
+        <ul>
+          <li>Squid Java Updates: Check for verified Java patches within the selected major version and architecture before managed server starts and loader installation. Running servers keep their current runtime until restart.</li>
+          <li>Java Security: Verify and apply the CVE-2026-114938 startup mitigation where needed, and show an advisory with a separate confirmation when protection cannot be verified.</li>
+          <li>Custom Scripts: Preserve modpack and custom startup scripts and their argument files.</li>
+          <li>JVM Arguments: Apply managed options consistently and avoid accumulating flags on repeated starts.</li>
+          <li>Java Selection: Prevent missing Java paths from silently changing the selected major version.</li>
+          <li>Settings Navigation: Check for unsaved server settings when using Back or Home.</li>
+          <li>Startup Advisory: Prevent unexpected startup cancellation while the Java security advisory is open.</li>
+          <li>Installation Failures: Show failed installations with red status text and borders and a warning icon in the server list.</li>
+          <li>Playit Region Tests: Avoid errors when cancelling or restarting region latency tests.</li>
+          <li>Application Security: Update the application runtime, archive handling, image processing, and networking dependencies to address high and critical dependency findings.</li>
+          <li>macOS Builds: macOS builds remain experimental and have not been tested for this release.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.11.2" date="2026-11-19">
+      <url type="details">https://github.com/SquidServers/selfhost-app/releases/tag/v0.11.2</url>
+      <description>
+        <p>Startup Fix</p>
+        <ul>
+          <li>Startup: Fix a blank application window after updating to 0.11.1.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.11.1" date="2026-11-17">
+      <url type="details">https://github.com/SquidServers/selfhost-app/releases/tag/v0.11.1</url>
+      <description>
+        <p>Java Security Updates</p>
+        <ul>
+          <li>Squid Java Updates: Check for verified Java patches within the selected major version and architecture before managed server starts and loader installation. Running servers keep their current runtime until restart.</li>
+          <li>Java Security: Verify and apply the CVE-2026-114938 startup mitigation where needed, and show an advisory with a separate confirmation when protection cannot be verified.</li>
+          <li>Custom Scripts: Preserve modpack and custom startup scripts and their argument files.</li>
+          <li>JVM Arguments: Apply managed options consistently and avoid accumulating flags on repeated starts.</li>
+          <li>Java Selection: Prevent missing Java paths from silently changing the selected major version.</li>
+          <li>Settings Navigation: Check for unsaved server settings when using Back or Home.</li>
+          <li>Startup Advisory: Prevent unexpected startup cancellation while the Java security advisory is open.</li>
+          <li>Installation Failures: Show failed installations with red status text and borders and a warning icon in the server list.</li>
+          <li>Playit Region Tests: Avoid errors when cancelling or restarting region latency tests.</li>
+          <li>Application Security: Update the application runtime, archive handling, image processing, and networking dependencies to address high and critical dependency findings.</li>
+          <li>macOS Builds: macOS builds remain experimental and have not been tested for this release.</li>
+        </ul>
+      </description>
+    </release>
     <release version="0.10.4" date="2026-11-12">
-      <description></description>
+      <url type="details">https://github.com/SquidServers/selfhost-app/releases/tag/v0.10.4</url>
+      <description>
+        <p>Analytics Improvements</p>
+        <ul>
+          <li>Analytics: Implemented bugfixes and changes to help with user analytics.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.10.3" date="2026-11-07">
+      <url type="details">https://github.com/SquidServers/selfhost-app/releases/tag/v0.10.3</url>
+      <description>
+        <p>Resource Pack &amp; Bedrock Port Fixes</p>
+        <ul>
+          <li>Resource Pack Validation: Allowed spaces in asset paths and included the API error details when an archive has invalid file paths.</li>
+          <li>Whitelist Defaults: New servers now include the whitelist properties in server.properties, set to false.</li>
+          <li>NetherNet Port Handling: Geyser keeps the Bedrock UDP port separate from the Java port when a NetherNet tunnel uses a different local port.</li>
+          <li>Analytics: Fixed duplicate analytics client initialization on startup.</li>
+          <li>General Cleanup: Dashboard stability and type improvements.</li>
+        </ul>
+      </description>
     </release>
     <release version="0.10.2" date="2026-11-04">
       <url type="details">https://github.com/SquidServers/selfhost-app/releases/tag/v0.10.2</url>
